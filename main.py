@@ -46,6 +46,7 @@ DIGIT_PATTERNS = {0: DIGIT_ZERO, 1: DIGIT_ONE, 2: DIGIT_TWO, 3: DIGIT_THREE,
                   8: DIGIT_EIGHT, 9: DIGIT_NINE}
 
 def show_number(display, number):
+    display.fill(0)
     tens, ones = split_digits(number)
     draw_number(display, tens, ones)
 
